@@ -1,8 +1,8 @@
 services:
-#    test_content.example:
-#        class: Test\ContentBundle\Example
+#    tgc_edit_content.example:
+#        class: tgc\EditContentBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
 
      edit_content:
-         class: Test\ContentBundle\Service\EditContent
+         class: tgc\EditContentBundle\Service\EditContent
          arguments: ["@session","@doctrine.orm.default_entity_manager"]

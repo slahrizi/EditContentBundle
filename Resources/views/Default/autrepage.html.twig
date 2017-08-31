@@ -1,14 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-{{ include('TestContentBundle:Default:validateTextEdit.html.twig') }}
+{{ include('tgcEditContentBundle:Default:validateTextEdit.html.twig') }}
 <div class="container">
     <h1>
-        {{ include('TestContentBundle:Default:textEditable.html.twig', { 'content': autretitre }) }}
+        {{ include('tgcEditContentBundle:Default:textEditable.html.twig', { 'content': autretitre }) }}
     </h1>
 
     <p>
-        {{ include('TestContentBundle:Default:textEditable.html.twig', { 'content': autredescription }) }}
+        {{ include('tgcEditContentBundle:Default:textEditable.html.twig', { 'content': autredescription }) }}
     </p>
 </div>
 
