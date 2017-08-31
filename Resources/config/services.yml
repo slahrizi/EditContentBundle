@@ -1,0 +1,8 @@
+services:
+#    test_content.example:
+#        class: Test\ContentBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+     edit_content:
+         class: Test\ContentBundle\Service\EditContent
+         arguments: ["@session","@doctrine.orm.default_entity_manager"]

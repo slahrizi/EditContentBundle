@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{{ include('TestContentBundle:Default:validateTextEdit.html.twig') }}
+<div class="container">
+    <h1>
+        {{ include('TestContentBundle:Default:textEditable.html.twig', { 'content': titre }) }}
+    </h1>
+
+    <p>
+        {{ include('TestContentBundle:Default:textEditable.html.twig', { 'content': description }) }}
+    </p>
+</div>
+
+
+
+{% endblock body %}

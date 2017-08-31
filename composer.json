@@ -1,0 +1,8 @@
+{
+    "name": "tgc/EditContent",
+    "description": "...",
+    "require": {
+        "php": "^5.3.3 || ^7.0",
+        "doctrine/doctrine-fixtures-bundle": "^2.3"
+    }
+}
