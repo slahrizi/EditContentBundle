@@ -1,0 +1,12 @@
+
+{% if content %}
+
+  {{ content.text }}
+
+  {% if edit %}
+      <a href="{{ path('edittextpage', { "slug": content.slug }) }}">edit</a>
+
+      {#<a href="{{ path('edittextpage' , {'slug': content.slug  } ) }}">edit</a>#}
+  {% endif %}
+
+{% endif %}

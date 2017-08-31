@@ -1,0 +1,5 @@
+{% if preview %}
+    <a href="{{ path('validateEditionpage', { "valid": 1 }) }}"><button type="button" class="btn btn-success">valider</button></a>
+    <a href="{{ path('validateEditionpage', { "valid": 0 }) }}"><button type="button" class="btn btn-default" >annuler</button></a>
+
+{% endif %}
