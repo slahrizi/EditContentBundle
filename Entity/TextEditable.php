@@ -2,29 +2,16 @@
 
 namespace tgc\EditContentBundle\Entity;
 
-
 use Doctrine\ORM\Mapping as ORM;
-use Gedmo\Mapping\Annotation as Gedmo;
-
-
-
-use Gedmo\Timestampable\Traits\TimestampableEntity;
 
 /**
  * TextEditable
  *
  * @ORM\Table(name="text_editable")
- * @ORM\Entity(repositoryClass="Test\ContentBundle\Repository\TextEditableRepository")
+ * @ORM\Entity(repositoryClass="tgc\EditContentBundle\Repository\TextEditableRepository")
  */
 class TextEditable
 {
-      /**
-     * Hook timestampable behavior
-     * updates createdAt, updatedAt fields
-     */
-    use TimestampableEntity;
-
-
     /**
      * @var int
      *
@@ -44,10 +31,9 @@ class TextEditable
     /**
      * @var string
      *
-     * @ORM\Column(length=128, unique=true)
+     * @ORM\Column(name="slug", type="string", length=128, unique=true)
      */
     private $slug;
-
 
 
     /**
@@ -107,5 +93,5 @@ class TextEditable
     {
         return $this->slug;
     }
-
 }
+
