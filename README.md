@@ -1,6 +1,6 @@
 # Translatable install :
 
-# Activate the bundle:
+## Activate the bundle:
 
 ``` php
 <?php
@@ -18,7 +18,7 @@ class AppKernel extends Kernel
 }
 ```
 
-# Add extensions to your mapping
+## Add extensions to your mapping
 ``` php
 <?php
 // app/config/config.yml
@@ -33,7 +33,7 @@ doctrine:
                 alias: GedmoTranslatable
 ```
 
-# Enable translatable
+## Enable translatable
 ``` php
 <?php
 // app/config/config.yml
