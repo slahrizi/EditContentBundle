@@ -3,6 +3,8 @@
 namespace tgc\EditContentBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Gedmo\Translatable\Translatable;
 
 /**
  * TextEditable
@@ -10,8 +12,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="text_editable")
  * @ORM\Entity(repositoryClass="tgc\EditContentBundle\Repository\TextEditableRepository")
  */
-class TextEditable
-{
+class TextEditable implements Translatable {
+
     /**
      * @var int
      *
@@ -23,7 +25,7 @@ class TextEditable
 
     /**
      * @var string
-     *
+     * @Gedmo\Translatable
      * @ORM\Column(name="text", type="text")
      */
     private $text;
@@ -35,14 +37,17 @@ class TextEditable
      */
     private $slug;
 
+    /**
+     * @Gedmo\Locale
+     */
+    private $locale;
 
     /**
      * Get id
      *
      * @return int
      */
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
 
@@ -53,8 +58,7 @@ class TextEditable
      *
      * @return TextEditable
      */
-    public function setText($text)
-    {
+    public function setText($text) {
         $this->text = $text;
 
         return $this;
@@ -65,8 +69,7 @@ class TextEditable
      *
      * @return string
      */
-    public function getText()
-    {
+    public function getText() {
         return $this->text;
     }
 
@@ -77,8 +80,7 @@ class TextEditable
      *
      * @return TextEditable
      */
-    public function setSlug($slug)
-    {
+    public function setSlug($slug) {
         $this->slug = $slug;
 
         return $this;
@@ -89,9 +91,17 @@ class TextEditable
      *
      * @return string
      */
-    public function getSlug()
-    {
+    public function getSlug() {
         return $this->slug;
     }
-}
 
+    /*
+     * Set Translatable locale
+     *
+     */
+
+    public function setTranslatableLocale($locale) {
+        $this->locale = $locale;
+    }
+
+}

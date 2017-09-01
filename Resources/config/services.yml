@@ -1,8 +1,7 @@
 services:
-#    tgc_edit_content.example:
-#        class: tgc\EditContentBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
-
-     edit_content:
+    edit_content:
          class: tgc\EditContentBundle\Service\EditContent
          arguments: ["@session","@doctrine.orm.default_entity_manager"]
+
+    EditContentBundle\EventSubscriber\LocaleSubscriber:
+        arguments: ['%kernel.default_locale%']
