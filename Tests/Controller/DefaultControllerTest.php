@@ -1,6 +1,6 @@
 <?php
 
-namespace tgc\EditContentBundle\Tests\Controller;
+namespace Tgc\EditContentBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

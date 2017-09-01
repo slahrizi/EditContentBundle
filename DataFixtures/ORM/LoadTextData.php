@@ -1,10 +1,10 @@
 <?php
 
-namespace tgc\EditContentBundle\DataFixtures\ORM;
+namespace Tgc\EditContentBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use tgc\EditContentBundle\Entity\TextEditable;
+use Tgc\EditContentBundle\Entity\TextEditable;
 
 class LoadUserData implements FixtureInterface {
 

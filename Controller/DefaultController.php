@@ -1,14 +1,14 @@
 <?php
 
-namespace tgc\EditContentBundle\Controller;
+namespace Tgc\EditContentBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
 
-use tgc\EditContentBundle\Entity\TextEditable;
+use Tgc\EditContentBundle\Entity\TextEditable;
 
-use tgc\EditContentBundle\Form\TextEditableType;
+use Tgc\EditContentBundle\Form\TextEditableType;
 
 
 class DefaultController extends Controller
@@ -23,7 +23,7 @@ class DefaultController extends Controller
 
       $result = $editContentService->getEditContent(['titre','description'],'indexpage', $edit);
 
-      return $this->render('tgcEditContentBundle:Default:index.html.twig', $result);
+      return $this->render('TgcEditContentBundle:Default:index.html.twig', $result);
   }
 
 
@@ -38,7 +38,7 @@ class DefaultController extends Controller
     $result = $editContentService->getEditContent(['autretitre','autredescription'],'autrepage', $edit);
 
 
-    return $this->render('tgcEditContentBundle:Default:autrepage.html.twig', $result);
+    return $this->render('TgcEditContentBundle:Default:autrepage.html.twig', $result);
 
   }
 
@@ -71,7 +71,7 @@ class DefaultController extends Controller
               'edit' => 'preview']);
       }
 
-      return $this->render('tgcEditContentBundle:Default:edit.html.twig', [
+      return $this->render('TgcEditContentBundle:Default:edit.html.twig', [
           'editform' => $editform->createView(),
 
       ]);

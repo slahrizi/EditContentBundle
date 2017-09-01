@@ -1,9 +1,9 @@
 <?php
 
-namespace tgc\EditContentBundle;
+namespace Tgc\EditContentBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class tgcEditContentBundle extends Bundle
+class TgcEditContentBundle extends Bundle
 {
 }

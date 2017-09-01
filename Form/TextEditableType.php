@@ -1,6 +1,6 @@
 <?php
 
-namespace tgc\EditContentBundle\Form;
+namespace Tgc\EditContentBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -26,7 +26,7 @@ class TextEditableType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'tgc\EditContentBundle\Entity\TextEditable'
+            'data_class' => 'Tgc\EditContentBundle\Entity\TextEditable'
         ));
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace tgc\EditContentBundle\Repository;
+namespace Tgc\EditContentBundle\Repository;
 
 /**
  * TextEditableRepository

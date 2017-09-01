@@ -1,12 +1,12 @@
 <?php
 
 
-namespace tgc\EditContentBundle\Service;
+namespace Tgc\EditContentBundle\Service;
 
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Doctrine\ORM\EntityManagerInterface;
 
-use tgc\EditContentBundle\Entity\TextEditable;
+use Tgc\EditContentBundle\Entity\TextEditable;
 
 class EditContent
 {

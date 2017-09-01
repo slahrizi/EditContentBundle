@@ -7,6 +7,6 @@
         "stof/doctrine-extensions-bundle": "^1.2"
     },
     "autoload": {
-        "psr-4": { "tgc\\EditContentBundle\\": "" }
+        "psr-4": { "Tgc\\EditContentBundle\\": "" }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace tgc\EditContentBundle\Entity;
+namespace Tgc\EditContentBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
@@ -10,7 +10,7 @@ use Gedmo\Translatable\Translatable;
  * TextEditable
  *
  * @ORM\Table(name="text_editable")
- * @ORM\Entity(repositoryClass="tgc\EditContentBundle\Repository\TextEditableRepository")
+ * @ORM\Entity(repositoryClass="Tgc\EditContentBundle\Repository\TextEditableRepository")
  */
 class TextEditable implements Translatable {
 

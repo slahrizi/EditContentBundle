@@ -1,6 +1,6 @@
 services:
     edit_content:
-         class: tgc\EditContentBundle\Service\EditContent
+         class: Tgc\EditContentBundle\Service\EditContent
          arguments: ["@session","@doctrine.orm.default_entity_manager"]
 
     EditContentBundle\EventSubscriber\LocaleSubscriber:
